@@ -1,0 +1,90 @@
+
+body{
+    background:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/********Navbar********/
+#navbar{
+    background:rgb(27, 96, 153);
+     max-width:280px;
+     height:100vh;
+     position:fixed;
+    padding:0px;
+    top:0;
+    left:0;
+    border: 2px solid rgb(196, 177, 177);
+}
+
+#navbar header{
+    color:white;
+    text-align:center;
+    font-size:30px;
+    padding: 10px 0px;
+}
+#navbar ul{
+    list-style:none;
+    height:100%;  
+    padding:0px;
+}
+#navbar ul li{
+    padding-left:25px;
+    border: 1px solid rgb(196, 177, 177);
+}
+#navbar ul li:hover{
+    background:rgb(209, 97, 32);
+}
+a{
+    display:block;
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    padding: 10px 0px;
+}
+
+/********Main********/
+#main-doc{
+    margin-left: 320px;
+}
+
+#main-doc header{
+    font-size:30px;
+    font-weight:bold;
+    margin-top:50px;
+    margin-bottom:30px;
+    color:rgb(27, 96, 153);   
+}
+ #main-doc a{
+     color:blue;
+     display:inline;
+ }
+
+ dt{ 
+     margin-top:25px;
+     padding-bottom: 5px;
+     font-weight: bold;
+ }
+ code{
+    color:rgb(27, 117, 177);   
+    background-color:rgba(224, 220, 220, 0.863);
+    font-size: 15px;
+    font-weight: bold;
+ }
+
+@media (max-width:800px){
+    body{
+        margin:0;
+    }
+    #navbar{
+        max-width:100%;
+        height:auto;
+        position:relative;
+    }
+    #navbar ul{
+        margin:0;
+    }
+    #main-doc{
+        margin-left: 0px;
+        margin:10px;
+    }
+}
